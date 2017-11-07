@@ -10,9 +10,10 @@
 
 	<body>
 		<main>
+			<!--Hämtar Header filer-->
 			<?php include("header.php"); ?>
 
-			
+			<!--Kopplingar till db saknas-->
 			
 			<div id="maincontent">
 				<div id="inloggcontent">
