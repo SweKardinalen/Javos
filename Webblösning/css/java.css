@@ -1,0 +1,468 @@
+#pagecontainer {
+	width: 100%;
+}
+
+body {
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #257a82;
+}
+
+h2, h3 {
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+}
+
+p, a {
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 100;
+}
+
+main {
+	text-align: center;
+}
+
+main > p {
+	padding: 15px 20px 30px 20px;
+	margin: 0;
+}
+
+main > h2 {
+	margin-top: 30px;
+}
+
+header > figure {
+	margin: 0;
+	padding-top: 20px;
+}
+
+header > figure > img {
+	width: 150px;
+	margin-left: 15px;
+}
+
+header {
+	position: relative;
+}
+
+/*       Hamburger menu      */
+
+header > nav {
+	display: none;
+	position: absolute;
+	top: 48px;
+	right: 40px;
+	z-index: 99;
+}
+
+header > nav.open {
+	display:block;
+}
+
+header > nav > ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+header > nav > ul > li {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 0.5px solid #fff;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    background-color: #e8f5f7;
+    display: block;
+	padding: 8px 40px 8px 15px;
+	transition: 0.3s background-color ease-in;
+}
+
+header > nav > ul > li:nth-child(4n) {
+	border-bottom: none;
+}
+
+header > nav > ul > li > a:hover {
+    background-color: #d3e6ed;
+}
+
+#hamburgermenu {
+	float: right;
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    z-index: 100;
+}
+
+#hamburgericon {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+
+#hamburgericon > img {
+    position: absolute;
+    width: 35px;
+}
+¨
+#slidecontainer {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+#headlinecontainer {
+	background-color: rgba(128, 128, 128, 0.6);
+	float: left;
+	position: absolute;
+	width: 100%;
+	bottom: 4%;
+	margin: 0;
+}
+
+#headlinecontainer > h2 {
+	font-size: 22px;
+	padding: 5px 20px 0px 20px;
+	text-align: left;
+	margin: 0;
+}
+
+#headlinecontainer > p {
+	font-size: 16px;
+	padding: 0px 20px 5px 20px;
+	text-align: left;
+	font-family: 'Playfair Display', sans-serif;
+	margin: 0;
+}
+
+h2 {
+	margin: 0;
+}
+
+h3 {
+	margin: 0;
+	margin-top: 10px;
+	font-size: 20px;
+	padding: 0 20px;
+}
+
+.actionbuttons {
+	padding: 0 10px;
+}
+
+.actionbuttons > a {
+	color: #000;
+	padding: 7px 15px 5px 15px;
+	border-radius: 40px;
+	font-size: 16px;
+	background-color: #f4efeb;
+	display: block;
+	margin-bottom: 10px;
+	transition: background-color 0.4s ease-in;
+	width: 90%;
+	margin: 10px auto;
+}
+
+.actionbuttons > a:hover {
+	background-color: #9b9690;
+}
+
+#firstbutton {
+	margin-top: 0;
+}
+
+#formcontainer {
+	width: 100%;
+	margin-top: 15px;
+	padding: 10px 0;
+}
+
+#formcontainer > h2 {
+	padding: 10px 0;
+}
+
+form {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 14px;
+	width: 60%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+form > label {
+	padding-left: 10px;
+}
+
+form > input {
+	width: 98%;
+	height: 20px;
+	border-radius: 5px;
+	border: 0.5px solid #c6c6c6;
+	margin-bottom: 15px;
+}
+
+textarea {
+	width: 97%;
+	height: 50px;
+	border-radius: 5px;
+	border: 0.5px solid #c6c6c6;
+	margin-bottom: 10px;
+}
+
+#submitcontainer {
+	text-align: center;
+}
+
+#submitcontainer > input {
+	width: 35%;
+	height: 30px;
+	font-size: 14px;
+	border-radius: 20px;
+	border: none;
+	background-color: #000;
+	color: #fff;
+	font-weight: 100;
+	position: right;
+}
+
+.grid > ul > li > img {
+	width: 95%;
+}
+
+.grid > ul > li > p {
+	margin: 0;
+	padding: 20px;
+	padding-top: 10px;
+}
+
+.grid > ul > li > p > a {
+	font-weight: bold;
+	transition: color 0.2s ease-in;
+}
+
+.grid > ul > li > p > a:hover {
+	color: #3998a0;
+}
+
+footer {
+	text-align: center;
+	background-color: #f4efeb;
+	border-top: 2px solid #9b9690;
+	margin-top: 40px;
+	padding-bottom: 20px;
+}
+
+footer > p {
+	margin: 0;
+	font-size: 16px;
+	color: black;
+	padding-bottom: 10px;
+}
+
+footer > h2 {
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+.logos {
+	text-align: center;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.logos a > img {
+	width: 50px;
+	display: inline-block;
+	margin: 10px;
+}
+
+#copyright {
+	font-size: 11px;
+	padding: 10px;
+}
+
+@media (min-width: 640px) {
+	
+	header > figure > img {
+		width: 180px;
+	}
+
+	header > nav {
+		display: block;
+		top: 35px;
+		right: 18px;
+	}
+
+	#hamburgermenu {
+		display: none;
+	}
+
+	header > nav > ul {
+		width: 100%;
+		padding: 15px 0 20px 0;
+		text-align: center;
+	}
+
+	header > nav > ul > li {
+		display: inline-block;
+		padding: 0px 12px;
+		border-right: 1px solid #000;
+	}
+
+	header > nav > ul > li:nth-child(4n) {
+		border-right: none;
+	}
+
+	header > nav > ul > li > a {
+		font-family: 'Playfair Display', serif;
+		font-size: 20px;
+		color: #000;
+		transition: color 0.2s ease-in;
+		background-color: rgba(0, 0, 0, 0);
+		padding: 0;
+	}
+
+	header > nav > ul > li > a:hover {
+		color: #939393;
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	#headlinecontainer > h2 {
+		font-size: 32px;
+		padding: 10px 20px 0px 30px;
+	}
+
+	#headlinecontainer > p {
+		font-size: 22px;
+		padding: 0px 20px 10px 30px;
+	}
+
+	.actionbuttons {
+		display: inline-block;
+		width: 46%;
+		padding: 0;
+	}
+
+	.actionbuttons > a {
+		font-size: 18px;
+	}
+
+	#firstbutton {
+		margin-right: 10px;
+	}
+
+	#secondbutton {
+		margin-left: 10px;
+	}
+
+	form {
+		font-size: 16px;
+		max-width: 500px;
+	}
+
+	#submitcontainer > input {
+		font-size: 16px;
+	}
+
+	form > input {
+		height: 25px;
+	}
+
+	textarea {
+		height: 55px;
+	}
+
+	#formcontainer > h2 {
+		font-size: 26px;
+	}
+
+	main > h2 {
+		font-size: 26px;
+	}
+
+	footer {
+		margin-top: 10px;
+	}
+
+	footer > h2 {
+		font-size: 20px;
+	}
+
+	.grid {
+		overflow: hidden;
+	}
+
+	.grid > ul > li {
+		float: left;
+		width: 50%;
+	}
+
+	main > p {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+
+	.grid > ul > li > p {
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 960px) {
+	body {
+		max-width: 960px;
+	}
+
+	header > figure > img {
+		width: 200px;
+	}
+
+	#headlinecontainer > h2 {
+		font-size: 35px;
+		padding: 10px 20px 0px 30px;
+	}
+
+	#formcontainer > h2 {
+		font-size: 30px;
+	}
+
+	main > h2 {
+		font-size: 30px;
+	}
+
+	.grid > ul > li {
+		width: 33.333%;
+	}
+
+	.grid > ul > li:nth-child(4n) {
+		clear: left;
+	}
+
+	footer {
+		margin-top: 30px;
+	}
+
+	footer > h2 {
+		font-size: 22px;
+	}
+
+}
