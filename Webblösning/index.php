@@ -18,13 +18,14 @@
 			<?php include("header.php"); ?>
 
 
-<!--Php start-->
+<!--Php behöver implementeras-->
 
 			<div id="maincontent">
 				<div id="columnone">
 					<h2>►SPÅRRECENSIONER</h2>
 					<p> Klicka <b> <i>här </i></b> för att lämna din recension över dagens spår, eller ta del av andras.</p><br/>
 				</div>
+<!--Php behöver implementeras-->
 				<div id="columntwo">
 					<h2>►RAPPORTERA ÄRENDE</h2>
 					<p> Har du uppäckt ett hinder i spåret? Klicka <b> <i>här </i></b> för att skicka en inrapportering till Skidloppet AB. </p>
@@ -34,7 +35,7 @@
 				<div id="line">
 					<hr>	
 				</div>
-<!--Php start-->			
+<!--Php behöver implementeras-->			
 				<div id="bigcontent">
 					<h2>Aktuell status</h2>
 					<p>ALL BUSINESS INTELLIGENCE SKALL PRESENTERAS NEDAN</p>
