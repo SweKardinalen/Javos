@@ -13,7 +13,7 @@
 			<!--Hämtar Header filer-->
 			<?php include("header.php"); ?>
 
-			<!--Kopplingar till db saknas-->
+			<!--Kopplingar till db/user saknas-->
 			
 			<div id="maincontent">
 				<div id="inloggcontent">
@@ -27,7 +27,7 @@
 						<input type="submit" value="Logga in">
 						
 						
-					<!--Lägg in koppling till inloggnings fil-->
+				
 
 					</form>
 				</div>
