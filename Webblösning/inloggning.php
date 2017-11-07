@@ -35,6 +35,6 @@
 
 		</main>
 	</body>
-	
+	<!--Hämtar footer filer-->
 	<?php include("footer.php"); ?>
 </html>
