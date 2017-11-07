@@ -1,5 +1,7 @@
 <head>
-
+	
+<!--Hanterar headern som visas på varje sida i applikationen, Är en separat fil för att undvika repitativ kod-->	
+	
 <meta charset="utf-8" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
