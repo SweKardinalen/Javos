@@ -1,0 +1,63 @@
+
+INPUT till tävling!
+
+
+<!-- Form -->
+						<div class="form">
+                        Datum: <input type="date" rows="4" cols="50" name="datum" class="field size1"/><br>
+                        Evenemang: <input type="textarea" rows="4" cols="50" name="evenemang" class="field size1"/><br>
+                        Arrangör: <input type="textarea" rows="4" cols="50" name="arrangor" class="field size1"/><br>
+                        <input type="submit" value="Skicka Tips"/>
+
+						</div>
+						<!-- End Form -->
+                        
+                        <?php
+
+                    $servername = "wwwlab.iit.his.se";
+                    $username = "sqllab";
+                    $password = "Tomten2009";
+        
+                    $pdo = new PDO("mysql:host=$servername;dbname=tavling", $username, $password);
+                    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+
+		if(isset($_POST['datum'])){
+            $datum=htmlentities($_POST['datum']);
+            $evenemang=htmlentities($_POST['evenemang']);
+            $arrangor=htmlentities($_POST['arrangor']);
+
+			$querystring='INSERT INTO tavlingkalender (datum, evenemang, arrangor) VALUES(:datum, :evenemang, :arrangor);';
+			$stmt = $pdo->prepare($querystring);
+			$stmt->bindParam(':datum', $datum);
+            $stmt->bindParam(':evenemang', $evenemang);
+            $stmt->bindParam(':arrangor', $arrangor);
+			$stmt->execute();
+            }
+?>
+
+
+
+
+
+output tävling!
+
+
+
+ <?php
+                     $pdo = new PDO('mysql:dbname=tavling;host=wwwlab.iit.his.se', 'sqllab', 'Tomten2009');
+                    $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
+        
+                    foreach($pdo->query( ' Select * from tavlingkalender;' ) as $row){
+        
+                        echo "<tr'>";
+             
+                        echo "<td><p>".$row['datum']."</p></td>";
+                       echo "<td><p>".$row['evenemang']."</p></td>";
+                        echo "<td><p>".$row['arrangor']."</p></td>";
+                        echo "<td><p>".$row['Status2']."</p></td>";
+                        
+                         echo "</tr>";
+        
+        }
+?>

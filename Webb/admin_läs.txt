@@ -1,0 +1,28 @@
+
+                    ##UTÖKAD INFORMATION ANGÅENDE LOGIN & ADMIN##
+
+********
+För att skapa en admin behöver en ny user skapas. Automatisk kommer kontot läggas som user_type = user.
+För att ändra detta öppnas workbench och sedan körs sen select * from users, I tabellen som skapas ändras
+user_type till admin manuellt.
+Detta behöver göras varje gång db startas om eller en ny admin vill skapas.
+User kontona fungerar utan problem vid skapande.
+********
+1. Skapa användare
+2. starta workbench med korrekt databas
+3. kör en select query på users
+4. ändra manuellt ifrån user till admin
+5. logga in på kontot
+********
+
+
+
+
+>Admin ska kunna
+- Lägga in valla tips KLAR
+- tabort spårrec
+- tabort valla tips
+
+
+>User ska kunna
+- Lägga in valla tips KLAR
