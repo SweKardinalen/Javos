@@ -68,7 +68,7 @@
 					<div class="table">
 						<table width="100%" border="0" cellspacing="0" cellpadding="0">
                         <?php
-                        $con = mysqli_connect("wwwlab.iit.his.se","sqllab","Tomten2009","tavling");
+                        $con = mysqli_connect("wwwlab.iit.his.se","sqllab","Tomten2009","JavosDatabas");
                         // Kollar koppling
                         if (mysqli_connect_errno())
                         {
@@ -145,7 +145,7 @@
                     $username = "sqllab";
                     $password = "Tomten2009";
         
-                    $pdo = new PDO("mysql:host=$servername;dbname=tavling", $username, $password);
+                    $pdo = new PDO("mysql:host=$servername;dbname=JavosDatabas", $username, $password);
                     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
